@@ -4,7 +4,8 @@ body {
 }
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 15% 75px 15%;
   background-color: #1f2937;
   margin: 0;
   align-items: center;
@@ -12,14 +13,55 @@ body {
 .header h1 {
   font-size: 24px;
   color: #f9faf8;
+  flex: none;
 }
 .header-links {
   display: flex;
   gap: 20px;
+  flex: none;
 }
-.header a {
+.header a,
+.hero-left p {
   text-decoration: none;
   font-size: 18px;
   font-weight: 100;
   color: #e5e7eb;
+}
+.hero {
+  display: flex;
+  background: #1f2937;
+  height: 450px;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+.hero-right {
+  background: grey;
+  width: 650px;
+  height: 300px;
+  flex: none;
+  text-align: center;
+}
+.hero-left h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 800;
+  width: 500px;
+  margin-bottom: 0;
+}
+.hero-left p {
+  margin: 5 0;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+.hero-left button {
+  width: 100px;
+  line-height: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #3882f6;
+  color: white;
 }
